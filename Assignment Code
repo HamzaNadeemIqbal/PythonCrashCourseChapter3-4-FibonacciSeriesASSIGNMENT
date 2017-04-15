@@ -1,0 +1,136 @@
+#3-4 Guest List:
+GuestList=['Ali','Saad','Sarmad']
+for guest in GuestList:
+    print(guest+" is invited to my party.")
+
+print("\n")
+#3-5 Changing Guest List:
+GuestList=['Ali','Saad','Sarmad']
+GuestList.insert(GuestList.index('Saad'),'Taha')
+removed=GuestList.pop(GuestList.index('Saad'))
+for guest in GuestList:
+    print(guest+" is invited to my party.")
+
+print(removed+" could not make to the party")
+print("\n")
+
+
+#3-6. More Guests:
+GuestList=['Ali','Saad','Sarmad']
+print("Ï found a Bigger Table")
+GuestList.insert(0,'Dawood')
+GuestList.insert((len(GuestList)/2).__int__(),'Shahab')
+GuestList.append('Taha')
+for guest in GuestList:
+    print(guest+" is invited to my party.")
+
+print("\n")
+
+#3-8.Seeing the World:
+Places = ['Saudi Arabia','China','England','Australia','Dubai']
+print(Places)
+print(sorted(Places))
+print(Places)
+Places.reverse()
+print(Places)
+Places.reverse()
+print(Places)
+Places.sort()
+print(Places)
+Places.sort(reverse=True)
+print(Places)
+
+print("\n")
+
+#3-9.Dinner Guests:
+GuestList=['Ali','Saad','Sarmad']
+length=len(GuestList)
+print('Length of my GuestList is : ',length)
+
+print("\n")
+
+
+#  3.10 Every Function
+GuestList=['Ali','Saad','Wali']
+GuestList.reverse()
+GuestList.sort()
+str(GuestList)
+GuestList.remove('Saad')
+GuestList.pop()
+del GuestList[0]
+GuestList.insert(0, 'Taha')
+
+print(" \n")
+
+
+
+#4-10. Slices:
+list=['apple','mango','pineapple','strawberry','banana','orange','melon']
+print('first 3 members in my list are :',list[0:3])
+print("3 elements from the middle of my list are : ")
+length=len(list)
+if(len(list)%2==0):
+    print(list[int(length / 2 - 1.5):int(length / 2 + 1.5)])
+else:
+    print(list[int(length / 2 - 1.5):int(length / 2 + 1.5)])
+print("last 3 elements are : ")
+print(list[-3:])
+
+print("\n")
+
+
+#4-11. My Pizzas, Your Pizzas:
+myFavPizza=['chicken','chicken fajita','chicken tikka','chicken creamy pizza']
+myFriendFavPizza=myFavPizza[:]
+myFavPizza.append("chicken pepproni pizza")
+myFriendFavPizza.append("chicken malai boti pizza")
+print('my fav pizza : ')
+for pizza in myFavPizza:
+    print(pizza)
+print("my friends fav pizza : ")
+for pizza in myFriendFavPizza:
+    print(pizza)
+
+
+#4-12. More Loops:
+fruit=['apple','mango','pineapple','strawberry','banana','orange','melon']
+food = ['hotdog', 'Drink', 'Cake', 'Bread', 'Ice cream', 'Sandwich']
+
+print("Fruits are : ")
+for fruit in fruit:
+    print(fruit)
+
+print("Foods are")
+for food in food:
+    print(food)
+
+print("\n")
+
+# 4-13 Buffet :
+foods = ('hotdog', 'Drink', 'Cake', 'Bread', 'Ice cream', 'Sandwich')
+print("Foods are")
+for foods in foods:
+    print(foods)
+
+
+# food.insert(0, "New Food")
+#Python rejected the upper change due to comment
+foods = ("Chips", "Ice Cream", 'Cake', 'Bread', "Juice")
+print("Foods are")
+for foods in foods:
+    print(foods)
+
+print("\n")
+
+#Projecteuler.net Fibbonaci series
+first= 1
+second = 2
+third = 2
+TotalSum = 0
+while third < 4000000:
+      if third % 2 == 0:
+         TotalSum += third
+      third = first + second
+      first = second
+      second = third
+print(TotalSum)
